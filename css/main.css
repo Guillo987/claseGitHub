@@ -1,0 +1,639 @@
+/*CSS reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Propiedades generales - mobileFirst*/
+
+.contenedor {
+    display: grid;
+    height: 100vh;
+    grid-template-areas: "header header"
+        "nav nav"
+        "saludoIndex parrafoIndex"
+        "footer footer";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 15% 10% 60% 15%;
+}
+
+header {
+    grid-area: header;
+    background-image: url('../img/banner1.jpeg');
+}
+
+.logoBanner {
+    display: none;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding-top: 0.9rem;
+}
+
+.subtitulo {
+    text-align: center;
+    margin-top: 0.5rem;
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.contenedor, .contenedor2, .contenedor3, .contenedor4, .contenedor5 {
+    background-image: url('../img/background.jpeg');
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+
+nav {
+    grid-area: nav;
+    border-bottom: solid 2px black;
+    border-top: solid 2px black;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-self: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin-bottom: 1rem;
+    margin-top: 0.3rem;
+    padding: 0.3rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    background-color: #b4cebf;
+}
+
+a:hover {
+    background-color: #287247;
+}
+
+p {
+    text-align: justify;
+    text-indent: 0.5rem;
+    font-size: 0.9rem;
+    padding: 0.3rem;
+    margin: 1rem;
+}
+
+.botonWA {
+    height: 2rem;
+    width: 2rem;
+    position: fixed;
+    bottom: 1rem;
+    right: 0.5rem;
+}
+
+.botonArriba {
+    display: none;
+}
+
+footer {
+    grid-area: footer;
+    background-image: url(../img/banner1.jpeg);
+    border-bottom: solid 2px black;
+    border-top: solid 2px black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+footer .iconosRedes {
+    display: flex;
+    justify-content: center;
+
+}
+
+footer .iconosRedes .iconos {
+    height: 1.2rem;
+    width: 1.2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+footer .pieDePag {
+    text-align: center;
+    color: black;
+    font-size: 0.5rem;
+    margin-top: 1rem;
+}
+
+/*Propiedades Index*/
+
+.saludoIndex {
+    grid-area: saludoIndex;
+    font-size: 0.8rem;
+    text-align: center;
+    align-self: center;
+}
+
+.parrafoIndex {
+    grid-area: parrafoIndex;
+    font-size: 1rem;
+    text-align: center;
+    align-self: center;
+}
+
+.fondoIndex {
+    display: none;
+}
+
+/*Propiedades quienes-somos.html*/
+
+.contenedor2 {
+    display: grid;
+    grid-template-areas: "header header"
+        "nav nav"
+        "main1 fotoBio1"
+        "fotoBio2 main2"
+        "footer footer";
+}
+
+.main1 {
+    grid-area: main1;
+}
+
+.fotoBio1 {
+    grid-area: fotoBio1;
+}
+
+.fotoBio2 {
+    grid-area: fotoBio2;
+}
+
+.main2 {
+    grid-area: fotoBio2;
+}
+
+.nombrePsi {
+    font-size: 25px;
+    padding-left: 22px;
+    margin-top: 55px;
+    font-style: italic;
+}
+
+.fotoPsi, .fotoPsi2 {
+    display: none;
+}
+
+.bioPsi {
+    background-color: #b4cebf;
+    padding: 25px;
+}
+
+/*nuestros-articulos*/
+
+.contenedor3 {
+    height: 100%;
+    display: grid;
+    grid-template-areas: "header header"
+        "nav nav"
+        "main main"
+        "footer footer";
+    grid-template-columns: 20% 80%;
+    grid-template-rows: auto auto auto auto;
+}
+
+.listaArt {
+    display: none;
+}
+
+main {
+    grid-area: main;
+}
+
+
+.listaArt ul li {
+    list-style: none;
+    font-size: 20px;
+}
+
+.listaArt ul li a {
+    text-decoration: none;
+}
+
+.nombreArt {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 25px;
+}
+
+/*preguntas-frecuentes*/
+
+.contenedor4 {
+    height: 100%;
+    display: grid;
+    grid-template-areas: "header header"
+        "nav nav"
+        "main main"
+        "footer footer";
+    grid-template-columns: 20% 80%;
+    grid-template-rows: auto auto auto auto;
+}
+
+
+.listaFaq {
+    display: none;
+}
+
+.faq {
+    color: black;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 25px;
+}
+
+.video1 {
+    display: none;
+}
+
+/*contacto*/
+
+.infoUser {
+    padding: 1rem;
+}
+
+.datos {
+    padding: 1rem
+}
+
+.terms {
+    padding: 1rem;
+}
+
+.botonesFormu {
+    display: flex;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.botonFormu {
+    margin-right: 1rem;
+    margin-left: 3rem;
+}
+
+
+/*Media queries*/
+
+/*Media queries - Tablet (breakPoint min 600px)*/
+
+@media only screen and (min-width: 600px) {
+
+    .contenedor {
+        display: grid;
+        height: 100vh;
+        grid-template-areas: "header header"
+            "nav nav"
+            "saludoIndex parrafoIndex"
+            "footer footer";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto auto auto;
+    }
+
+    h1 {
+        font-size: 2rem;
+        font-weight: 500;
+        padding-top: 2rem;
+    }
+
+    .subtitulo {
+        margin-top: 0.5rem;
+        padding-bottom: 1rem;
+        font-size: 1.8rem;
+        font-weight: 300;
+    }
+
+    body {
+        background-image: url('../img/background.jpeg');
+        font-family: 'Roboto', sans-serif;
+        line-height: 1.5;
+    }
+
+    nav {
+        grid-area: nav;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav ul li {
+        font-size: 1.1rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+
+    .botonWA {
+        height: 3rem;
+        width: 3rem;
+        position: fixed;
+        bottom: 2.5rem;
+        right: 0.5rem;
+    }
+
+    .botonArriba {
+        display: none;
+    }
+
+    footer .iconosRedes .iconos {
+        height: 1.8rem;
+        width: 1.8rem;
+    }
+
+    footer .pieDePag {
+        font-size: 0.8rem;
+        padding-bottom: 1rem;
+    }
+
+    /*index*/
+
+    .saludoIndex {
+        grid-area: saludoIndex;
+        font-size: 1rem;
+        text-align: center;
+        align-self: center;
+    }
+
+    .parrafoIndex {
+        grid-area: parrafoIndex;
+        font-size: 1.5rem;
+    }
+
+    .fondoIndex {
+        display: none;
+    }
+
+    /*quienes-somos*/
+
+    .nombrePsi {
+        text-align: center;
+    }
+
+    /*nuestros-articulos*/
+
+    .nombreArt {
+        color: black;
+    }
+
+    /*contacto*/
+
+    .contenedorFormu {
+        display: flex;
+        justify-content: center;
+        margin-top: 5rem;
+        color: black;
+    }
+
+}
+
+/*Media queries - Desktop (breakPoint min 1024px)*/
+
+@media only screen and (min-width: 1024px) {
+
+    .contenedor {
+        display: grid;
+        height: 1200px;
+        grid-template-areas: "header header"
+            "nav nav"
+            "saludoIndex parrafoIndex"
+            "footer footer";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto 70% auto;
+        background-image: url('../img/fotoHome.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .logoBanner {
+        display: block;
+        height: 150px;
+        width: 150px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 2rem;
+        margin-left: 1.5rem;
+    }
+
+    main, section {
+        color: white;
+    }
+
+    h1 {
+        text-align: right;
+        margin-right: 70px;
+        font-size: 45px;
+        font-weight: 500;
+        padding-top: 30px;
+    }
+
+    .subtitulo {
+        text-align: right;
+        margin-right: 70px;
+        font-size: 30px;
+        font-weight: 300;
+        padding-bottom: 35px;
+    }
+
+    nav {
+        background-image: url('../img/background.jpeg');
+    }
+
+    nav ul li {
+        padding: 5px;
+        margin: 5px;
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+
+    p {
+        color: white;
+        text-align: justify;
+        text-indent: 50px;
+        font-size: 18px;
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .botonWA {
+        height: 60px;
+        width: 60px;
+        border: none;
+        position: fixed;
+        bottom: 15px;
+        right: 15px
+    }
+
+    .botonArriba {
+        display: block;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    footer {
+        padding: 5px;
+    }
+
+    footer .iconosRedes {
+        padding-top: 30px;
+        text-align: center;
+    }
+
+    footer .iconosRedes .iconos {
+        height: 1.8rem;
+        width: 1.8rem;
+        height: 40px;
+        width: 40px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    footer .pieDePag {
+        font-size: 0.9rem;
+        padding-bottom: 0.5rem;
+        font-size: 12px;
+        padding: 9px;
+    }
+
+    /*Propiedades Index*/
+
+    .saludoIndex {
+        grid-area: saludoIndex;
+        font-size: 1.5rem;
+        text-align: center;
+        align-self: center;
+    }
+
+    .parrafoIndex {
+        grid-area: parrafoIndex;
+        font-size: 1.5rem;
+    }
+
+    /*quienes-somos*/
+
+    .contenedor2 {
+        display: grid;
+        grid-template-areas: "header header"
+            "nav nav"
+            "main1 fotoBio1"
+            "fotoBio2 main2"
+            "footer footer";
+        grid-template-columns: 50% 50%;
+    }
+
+    .otrosP {
+        color: black;
+        font-size: 1.1rem;
+    }
+
+    .main1 {
+        grid-area: main1;
+    }
+
+    .main2 {
+        grid-area: main2;
+    }
+
+    .fotoBio1 {
+        grid-area: fotoBio1;
+
+    }
+
+    .fotoBio2 {
+        grid-area: fotoBio2;
+    }
+
+    .fotoPsi {
+        height: 25rem;
+        width: 20rem;
+        display: block;
+    }
+
+    .contenedorFotoPsi {
+        display: flex;
+        justify-content: center;
+    }
+
+    /*nuestros-articulos*/
+
+    .contenedor3 {
+        display: grid;
+        height: 100%;
+        grid-template-areas: "header header"
+            "nav nav"
+            "listaArt main"
+            "footer footer";
+        grid-template-columns: 20% 80%;
+        grid-template-rows: auto auto auto auto;
+    }
+
+    .listaArt {
+        grid-area: listaArt;
+        display: flex;
+        margin-top: 20rem;
+        margin-left: 2rem;
+        position: fixed;
+    }
+
+    /*preguntas-frecuentes*/
+
+    .contenedor4 {
+        display: grid;
+        height: 100%;
+        grid-template-areas: "header header"
+            "nav nav"
+            "listaFaq main"
+            "footer footer";
+        grid-template-columns: 20% 80%;
+        grid-template-rows: auto auto 90% auto;
+    }
+
+    iframe {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .video1 {
+        display: block;
+        text-align: center;
+        margin: 5rem;
+    }
+
+    .listaFaq {
+        grid-area: listaFaq;
+        display: flex;
+        margin-top: 20rem;
+        margin-left: 2rem;
+        position: fixed;
+    }
+
+    .listaFaq ul li {
+        list-style: none;
+        font-size: 20px;
+    }
+
+    .listaFaq ul li a {
+        text-decoration: none;
+    }
+
+    .faq {
+        text-align: center;
+        font-style: italic;
+        margin-top: 40px;
+        font-size: 25px;
+    }
+
+}
